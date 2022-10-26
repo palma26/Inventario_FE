@@ -1,22 +1,33 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
+
+import { AppRoutingModule } from './app.routing';
+import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
-import { EmpresaComponent } from './Administracion/empresa/empresa.component';
-import { SucursalComponent } from './Administracion/sucursal/sucursal.component';
-import { MenuAdminComponent } from './Dashboard/menu-admin/menu-admin.component';
-import { MenuUsuarioComponent } from './Dashboard/menu-usuario/menu-usuario.component';
+
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
 @NgModule({
+  imports: [
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    ComponentsModule,
+    RouterModule,
+    AppRoutingModule,
+    NgbModule,
+    ToastrModule.forRoot()
+  ],
   declarations: [
     AppComponent,
-    EmpresaComponent,
-    SucursalComponent,
-    MenuAdminComponent,
-    MenuUsuarioComponent
-  ],
-  imports: [
-    BrowserModule
+    AdminLayoutComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]
