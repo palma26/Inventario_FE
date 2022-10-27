@@ -1,7 +1,8 @@
 export interface Data {
-  Id: string;
+  Id?: string;
   Nombre: string;
   Nit: string;
   Direccion: string;
   Telefono: string;
 }
+ 

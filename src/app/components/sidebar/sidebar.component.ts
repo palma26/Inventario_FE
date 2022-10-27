@@ -10,7 +10,9 @@ export const ROUTES: RouteInfo[] = [
   { path: '/dashboard', title: 'Dashboard',  icon: 'design_app', class: '' },
   { path: '/Empresas', title: 'Empresas',  icon:'location_map-big', class: '' },
   { path: '/Sucursales', title: 'Sucursales',  icon:'location_map-big', class: '' },
-
+  { path: '/Bodegas', title: 'Bodegas',  icon:'location_map-big', class: '' },
+  { path: '/Categorias', title: 'Categorias',  icon:'location_map-big', class: '' },
+  { path: '/Productos', title: 'Productos',  icon:'location_map-big', class: '' },
 ];
 
 @Component({

@@ -11,6 +11,9 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { empresaComponent } from '../../Empresas/empresa.component';
 import { sucursalComponent } from '../../Sucursales/Sucursales.component';
+import { BodegaComponent} from '../../Bodegas/Bodega.component';
+import { CategoriaComponent} from '../../Categorias/categoria.component';
+import { productoComponent } from '../../Productos/producto.component';
 
 @NgModule({
   imports: [
@@ -26,6 +29,9 @@ import { sucursalComponent } from '../../Sucursales/Sucursales.component';
     IconsComponent,
     empresaComponent,
     sucursalComponent,
+    BodegaComponent,
+    CategoriaComponent,
+    productoComponent,
   ]
 })
 

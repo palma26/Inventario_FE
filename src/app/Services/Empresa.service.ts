@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { TransaccionResponse } from '../models/TransaccionResponse';
-import { Data as empresa} from '../models/Empresas/DataEmpresa';
+import {Empresa} from '../models/Empresas/Empresa';
+import {Data as empresa} from '../models/Empresas/DataEmpresa';
 
 @Injectable({
   providedIn: 'root'
@@ -15,9 +16,16 @@ export class empresaService {
   constructor(private _httpClient: HttpClient) {}
 
   //Metodo para obtener las empresas
-  GetEmpresas(): Observable<empresa>{
-    return this._httpClient.get<empresa>(`https://localhost:7042/api/Empresas/GetEmpresas`,{
+  GetEmpresas(): Observable<Empresa>{
+    return this._httpClient.get<Empresa>(`http://192.168.10.30/inventario/Inventario/api/Empresas/GetEmpresas`,{
       headers: this.headers
     });
+  }
+
+  //Metodo para agregar una empresas
+  AddEmpresa(empresa: empresa): Observable<TransaccionResponse>{
+    return this._httpClient.post<TransaccionResponse>(`http://192.168.10.30/inventario/Inventario/api/Empresas/AddEmpresa`,empresa,  {
+      headers: this.headers
+    })
   }
 }
