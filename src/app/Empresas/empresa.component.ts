@@ -11,6 +11,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Data } from "../models/Empresas/DataEmpresa";
 import { Empresa } from "../models/Empresas/Empresa";
 import { empresaService } from "../Services/Empresa.service";
+
 import {
   NgbModalConfig,
   NgbModal,
@@ -47,7 +48,7 @@ export class empresaComponent implements OnInit {
   ngOnInit() {
     this.GetEmpresas();
 
-      //inicializando formulario para agregar 
+      //inicializando formulario para agregar
       this.newForm = this._formBuilder.group({
         nombre: [null, Validators.required],
       });
@@ -71,15 +72,15 @@ export class empresaComponent implements OnInit {
       return;
     }
 
-    let empresa: Data  = { 
-      Nombre:this.newForm.get("nombre").value, 
-      Nit: this.newForm.get("nit").value, 
-      Direccion:this.newForm.get("direccion").value, 
-      Telefono: this.newForm.get("telefono").value, 
+    let empresa: Data  = {
+      Nombre:this.newForm.get("nombre").value,
+      Nit: this.newForm.get("nit").value,
+      Direccion:this.newForm.get("direccion").value,
+      Telefono: this.newForm.get("telefono").value,
     };
 
     this._empresaService.AddEmpresa(empresa).subscribe((data) => {
-      
+
       if(data.strResponseCode == '00'){
         this.newForm.reset();
         alert("REGISTRO EXITOSO");
@@ -90,7 +91,7 @@ export class empresaComponent implements OnInit {
       }else{
         alert("error al registrar")
       }
-     
+
     })
 
   }

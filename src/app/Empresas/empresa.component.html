@@ -22,10 +22,10 @@
               <tr *ngFor="let item of listEmpresas; index as i">
                 <td scope="row">{{ i + 1 }}</td>
                 <td>{{ item.nombre }}</td>
-                <td>{{ item.nit }}</td> 
+                <td>{{ item.nit }}</td>
                 <td>{{ item.direccion }}</td>
                 <td>{{ item.telefono }}</td>
-                <td> 
+                <td>
                   <span class="btn btn-primary btn-sm"> <i class="now-ui-icons shopping_tag-content"></i></span> <span class="btn btn-danger btn-sm ml-2"> <i class="now-ui-icons ui-1_simple-delete"></i></span>
                 </td>
               </tr>
@@ -46,7 +46,7 @@
       <form [formGroup]="newForm" >
         <div class="form-row">
           <label class="form-control-label">Nombre Empresa</label>
-          <input type="text" class="form-control" placeholder="empresa" formControlName = "nombre">
+          <input type="text" class="form-control" placeholder="empresa" >
         </div>
       </form>
     </div>

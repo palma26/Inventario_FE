@@ -16,6 +16,10 @@ export const ROUTES: RouteInfo[] = [
   { path: '/Proveedores', title: 'Proveedores',  icon:'location_map-big', class: '' },
   { path: '/Clientes', title: 'Clientes',  icon:'location_map-big', class: '' },
   { path: '/Compras', title: 'Compras',  icon:'location_map-big', class: '' },
+  { path: '/Ventas', title: 'Ventas',  icon:'location_map-big', class: '' },
+  { path: '/Ajustes', title: 'Ajustes',  icon:'location_map-big', class: '' },
+  { path: '/Roles', title: 'Roles',  icon:'location_map-big', class: '' },
+  { path: '/Usuarios', title: 'Usuarios',  icon:'location_map-big', class: '' },
 ];
 
 @Component({

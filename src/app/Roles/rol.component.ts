@@ -5,13 +5,13 @@ import { Component,
 } from '@angular/core';
 
 @Component({
-  selector: 'app-compra',
-  templateUrl: './compra.component.html',
-  styleUrls: ['./compra.component.css'],
+  selector: 'app-proveedor',
+  templateUrl: './rol.component.html',
+  styleUrls: ['./rol.Component.css'],
   encapsulation: ViewEncapsulation.None,
 })
 
-export class compraComponent implements OnInit{
+export class rolComponent implements OnInit{
 
   ngOnInit(): void {
 

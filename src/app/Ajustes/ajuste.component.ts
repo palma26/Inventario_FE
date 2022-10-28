@@ -5,13 +5,13 @@ import { Component,
 } from '@angular/core';
 
 @Component({
-  selector: 'app-compra',
-  templateUrl: './compra.component.html',
-  styleUrls: ['./compra.component.css'],
+  selector: 'app-ajuste',
+  templateUrl: './ajuste.component.html',
+  styleUrls: ['./ajuste.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
 
-export class compraComponent implements OnInit{
+export  class ajusteComponent implements OnInit{
 
   ngOnInit(): void {
 
