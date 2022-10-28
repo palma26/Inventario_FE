@@ -17,14 +17,14 @@ export class empresaService {
 
   //Metodo para obtener las empresas
   GetEmpresas(): Observable<Empresa>{
-    return this._httpClient.get<Empresa>(`http://192.168.10.30/inventario/Inventario/api/Empresas/GetEmpresas`,{
+    return this._httpClient.get<Empresa>(`https://localhost:7042/api/Empresas/GetEmpresas`,{
       headers: this.headers
     });
   }
 
   //Metodo para agregar una empresas
   AddEmpresa(empresa: empresa): Observable<TransaccionResponse>{
-    return this._httpClient.post<TransaccionResponse>(`http://192.168.10.30/inventario/Inventario/api/Empresas/AddEmpresa`,empresa,  {
+    return this._httpClient.post<TransaccionResponse>(`https://localhost:7042/api/Empresas/AddEmpresa`,empresa,  {
       headers: this.headers
     })
   }

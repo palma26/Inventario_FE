@@ -14,6 +14,9 @@ import { sucursalComponent } from '../../Sucursales/Sucursales.component';
 import { BodegaComponent} from '../../Bodegas/Bodega.component';
 import { CategoriaComponent} from '../../Categorias/categoria.component';
 import { productoComponent } from '../../Productos/producto.component';
+import { proveedorComponent } from '../../Proveedores/proveedor.component';
+import { clienteComponent } from '../../Clientes/cliente.component';
+import { compraComponent } from '../../Compras/compra.component';
 
 @NgModule({
   imports: [
@@ -32,6 +35,9 @@ import { productoComponent } from '../../Productos/producto.component';
     BodegaComponent,
     CategoriaComponent,
     productoComponent,
+    proveedorComponent,
+    clienteComponent,
+    compraComponent,
   ]
 })
 

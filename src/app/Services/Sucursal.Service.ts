@@ -16,7 +16,7 @@ export class sucursalService{
 
   //Metodo para obtener sucursales
   GetSucursales(): Observable<Sucursal>{
-    return this._httpClient.get<Sucursal>(`http://192.168.10.30/inventario/Inventario/api/Sucursales/GetSucursales`,{
+    return this._httpClient.get<Sucursal>(`https://localhost:7042/api/Sucursales/GetSucursales`,{
       headers: this.headers
     });
   }

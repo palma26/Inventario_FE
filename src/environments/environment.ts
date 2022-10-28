@@ -6,4 +6,7 @@
 export const environment = {
   production: false,
 
+ // https://localhost:7042/api/Empresas/GetEmpresas
+
+ // http://192.168.10.30/inventario/Inventario/api/Empresas/GetEmpresas
 };
